@@ -14,7 +14,6 @@ RUN npm install --omit=dev
 COPY AGENT.md AGENT.md
 COPY poncho.config.js poncho.config.js
 COPY skills skills
-COPY tests tests
 COPY .env.example .env.example
 COPY server.js server.js
 

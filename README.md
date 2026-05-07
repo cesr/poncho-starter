@@ -89,7 +89,6 @@ The dev server runs on http://localhost:3000 with the built-in web UI for chatti
 - **Add a skill**: create `skills/<name>/SKILL.md` — the agent activates it when relevant
 - **Add a cron job**: add an entry under `cron:` in `AGENT.md` frontmatter
 - **Tools and feature flags**: edit `poncho.config.js`
-- **Tests**: drop YAML files under `tests/`, run with `npx poncho test`
 
 For the full feature reference, see the [Poncho documentation](https://github.com/cesr/poncho-ai#readme).
 
