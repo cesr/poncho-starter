@@ -39,7 +39,7 @@ Pre-configured features:
 
 The starter ships with three example skills (and two example crons in `AGENT.md`) so you can see the patterns in action. Keep, customize, or replace:
 
-- **`dream`** — nightly memory consolidation. Reviews the day's conversations and writes anything worth remembering to long-term memory. Wired up to a 3am UTC cron.
+- **`dream`** — nightly memory consolidation. Reviews the day's conversations and writes anything worth remembering to long-term memory. Wired up to a 3am cron (Etc/UTC).
 - **`daily-question` cron** — asks you a thoughtful, present-focused question once a day to learn about your life and store it in memory. Defined in `AGENT.md`, fires via Telegram if configured.
 - **`engaging-writer`** — a writing style guide for longform content. Covers narrative techniques, register-shifting, and a long list of AI writing tropes to avoid. Activates when you ask the agent to draft an essay, newsletter, or anything else that needs to read well.
 - **`weather`** — fetches current weather and forecast for any city via Open-Meteo (no API key needed). A useful tool *and* a clean example of how a script-backed skill is structured.

@@ -16,14 +16,14 @@ cron:
   # conversations and writes anything worth remembering to long-term memory.
   dream:
     schedule: "0 3 * * *"
-    timezone: "UTC"
+    timezone: "Etc/UTC"
     task: "Activate the dream skill and run the nightly consolidation process. Follow the full protocol in the skill instructions."
 
   # Daily check-in: ask the user a thoughtful, present-focused question.
   # Disable, retime, or rewrite to match your agent's purpose.
   daily-question:
     schedule: "0 18 * * *"
-    timezone: "UTC"
+    timezone: "Etc/UTC"
     channel: telegram
     task: "Ask me a thoughtful, present-focused question to learn more about what's going on in my life right now. Check memory first to see what you already know, then ask about something current you don't know yet. Focus on the present: what I'm thinking about lately, current challenges or wins, weekend plans, what's exciting or stressing me out, things I'm into right now, routines, goals I'm working toward, opinions on stuff happening in tech/life, favorite recent discoveries. Avoid historical questions about the past. Keep it casual and conversational. When I respond, store what you learn in memory."
 ---
@@ -46,7 +46,7 @@ Environment: {{runtime.environment}}
 
 This starter ships with three example skills under `skills/`:
 
-- **`dream`** — nightly memory consolidation, runs via cron at 3am UTC
+- **`dream`** — nightly memory consolidation, runs via cron at 3am Etc/UTC
 - **`engaging-writer`** — writing style guide, activates when drafting longform content
 - **`weather`** — fetches current weather + forecast for any city (uses Open-Meteo, no API key required)
 
