@@ -22,10 +22,12 @@ export default {
   bash: { python: true, javascript: true },
   isolate: { memoryLimit: 128, timeLimit: 10000 },
 
-  // Persist conversations + memory in Postgres. The Railway template provisions
-  // a Postgres service and injects DATABASE_URL automatically.
+  // Persist conversations + memory.
+  // - On Railway (and anywhere DATABASE_URL is set), use Postgres.
+  // - Locally, fall back to SQLite under ~/.poncho/store so `poncho dev` works
+  //   with zero setup. No need to spin up Postgres just to chat with the agent.
   storage: {
-    provider: "postgresql",
+    provider: process.env.DATABASE_URL ? "postgresql" : "sqlite",
     memory: {
       enabled: true,
       maxRecallConversations: 50,
