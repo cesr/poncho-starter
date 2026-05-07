@@ -9,5 +9,16 @@
     "isolated-vm": "^6.1.2",
     "marked": "^17.0.2",
     "postgres": "^3.4.9"
+  },
+  "engines": {
+    "node": ">=20.0.0 <25.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "esbuild",
+      "isolated-vm",
+      "@poncho-ai/browser"
+    ]
   }
 }
