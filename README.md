@@ -7,9 +7,7 @@ One-click deploy on Railway provisions:
 - The agent service (Node 22, Chromium for browser tools, in-process scheduler)
 - A managed Postgres for conversation history + agent memory
 
-> **TODO**: replace this with the actual Railway template URL once published.
->
-> [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/template/REPLACE_ME)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/zQHXif)
 
 ## What's included
 
