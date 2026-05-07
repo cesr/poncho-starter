@@ -35,6 +35,15 @@ Pre-configured features:
 - **Bearer auth** — `/api` routes are protected by `PONCHO_AUTH_TOKEN`.
 - **Production-safe tool defaults** — write/delete tools are disabled in production by default; opt back in per environment in `poncho.config.js`.
 
+### Bundled skills
+
+The starter ships with three example skills (and two example crons in `AGENT.md`) so you can see the patterns in action. Keep, customize, or replace:
+
+- **`dream`** — nightly memory consolidation. Reviews the day's conversations and writes anything worth remembering to long-term memory. Wired up to a 3am UTC cron.
+- **`daily-question` cron** — asks you a thoughtful, present-focused question once a day to learn about your life and store it in memory. Defined in `AGENT.md`, fires via Telegram if configured.
+- **`engaging-writer`** — a writing style guide for longform content. Covers narrative techniques, register-shifting, and a long list of AI writing tropes to avoid. Activates when you ask the agent to draft an essay, newsletter, or anything else that needs to read well.
+- **`weather`** — fetches current weather and forecast for any city via Open-Meteo (no API key needed). A useful tool *and* a clean example of how a script-backed skill is structured.
+
 ## Deploy
 
 1. Click **Deploy on Railway** above.
