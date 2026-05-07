@@ -76,12 +76,14 @@ Railway's "App Sleeping" pauses the container when there's no traffic — and wh
 ```sh
 gh repo clone cesr/poncho-starter my-agent
 cd my-agent
-cp .env.example .env  # fill in ANTHROPIC_API_KEY and DATABASE_URL
-npm install
-npx poncho dev
+cp .env.example .env   # fill in ANTHROPIC_API_KEY (DATABASE_URL is optional locally)
+pnpm install
+pnpm dev
 ```
 
-The dev server runs on http://localhost:3000 with the built-in web UI for chatting with the agent locally.
+The dev server runs on http://localhost:3000 with the built-in web UI for chatting with the agent locally. By default it stores conversations in SQLite under `~/.poncho/store` — no Postgres required for local dev.
+
+The starter pins Node 24 via `.nvmrc` (use `nvm use` or `fnm use`). Node 25 also works but requires a C++ toolchain to compile native deps from source since prebuilds don't exist for it yet.
 
 ## Customizing
 
