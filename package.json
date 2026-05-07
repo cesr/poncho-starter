@@ -1,0 +1,13 @@
+{
+  "name": "poncho-starter",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@poncho-ai/browser": "^0.6.14",
+    "@poncho-ai/cli": "^0.39.0",
+    "esbuild": "^0.28.0",
+    "isolated-vm": "^6.1.2",
+    "marked": "^17.0.2",
+    "postgres": "^3.4.9"
+  }
+}

@@ -1,0 +1,10 @@
+tests:
+  - name: "Basic sanity"
+    task: "What is 2 + 2?"
+    expect:
+      contains: "4"
+
+  - name: "Hello-world skill discovers and activates"
+    task: "Show me the hello world demo"
+    expect:
+      contains: "Poncho"
