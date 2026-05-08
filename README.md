@@ -2,7 +2,7 @@
 
 A one-click [Poncho](https://github.com/cesr/poncho-ai) agent you can deploy on [Railway](https://railway.com).
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/zQHXif)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/L97vtU?referralCode=CiJV1b)
 
 ![Poncho CLI and Web UI](https://raw.githubusercontent.com/cesr/poncho-ai/main/assets/poncho.png)
 
