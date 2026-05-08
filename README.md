@@ -1,6 +1,6 @@
-# poncho-starter
+# Poncho Starter Agent
 
-A one-click [Poncho](https://github.com/cesr/poncho-ai) agent for [Railway](https://railway.com).
+A one-click [Poncho](https://github.com/cesr/poncho-ai) agent you can deploy on [Railway](https://railway.com).
 
 [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/zQHXif)
 
